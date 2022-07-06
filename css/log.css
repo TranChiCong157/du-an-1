@@ -1,0 +1,16 @@
+a {
+    text-decoration: none;
+}
+
+.cart {
+    position: relative;
+}
+
+.number {
+    position: absolute;
+    top: 1;
+    left: 1;
+    bottom: 1;
+    right: 1;
+    cursor: pointer;
+}

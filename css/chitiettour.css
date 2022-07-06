@@ -1,0 +1,12 @@
+#container3{
+    margin-top: 200px;
+}
+
+.thea>a{
+    margin-left: 100px;
+}
+.pagination {
+    display: flex;
+    padding-left: 100px;
+    list-style: none;
+}

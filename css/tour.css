@@ -1,0 +1,105 @@
+.container {
+    margin-top: 20px;
+}
+
+#row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px
+}
+
+#so1 {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+#so1 .img img {
+    border-radius: 15px;
+    max-width: 100%;
+}
+
+@media screen and (max-width:1200px) {
+    #row {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+    #so1 .img img {
+        border-radius: 15px;
+        max-width: 100%;
+    }
+}
+
+.conten-item {
+    border-radius: 15px;
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 174, 239, .7);
+    width: 100%;
+    height: 0%;
+    transform: translateY(0%);
+    transition: ease-in-out 0.5s;
+    animation-name: fadeOut;
+    animation-duration: 1s;
+}
+
+#so1:hover .conten-item {
+    transform: translateY(0%);
+    height: 40%;
+    width: 100%;
+    transition: ease-in-out 1s;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.conten-item {
+    text-align: center;
+}
+
+.conten-item h3 {
+    font-size: 30px;
+    color: white;
+}
+
+.conten-item p {
+    font-size: 20px;
+    color: white;
+}
+
+.pagination {
+    list-style: none;
+}
+
+.lichtrinh {
+    margin-left: 100px;
+    margin-right: 100px;
+    border-bottom: 1px solid black;
+}
+
+.lichtrinh>h2 {
+    margin-top: 10px;
+}
+
+.lichtrinh>p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
